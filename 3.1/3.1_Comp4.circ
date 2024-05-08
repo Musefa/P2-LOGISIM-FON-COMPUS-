@@ -88,7 +88,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(360,210)" to="(360,240)"/>
     <wire from="(320,130)" to="(320,210)"/>
     <wire from="(320,130)" to="(460,130)"/>
-    <wire from="(190,130)" to="(320,130)"/>
     <wire from="(360,90)" to="(360,210)"/>
     <wire from="(360,90)" to="(500,90)"/>
     <wire from="(190,90)" to="(360,90)"/>
@@ -105,6 +104,7 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(440,320)" to="(460,320)"/>
     <wire from="(460,300)" to="(460,320)"/>
     <wire from="(480,300)" to="(480,340)"/>
+    <wire from="(190,130)" to="(320,130)"/>
     <comp lib="0" loc="(450,180)" name="Probe">
       <a name="radix" val="10signed"/>
     </comp>
