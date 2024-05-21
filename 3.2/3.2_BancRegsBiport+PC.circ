@@ -121,10 +121,10 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     </comp>
     <comp loc="(250,240)" name="BancRegistres4x8b"/>
     <comp lib="6" loc="(870,90)" name="Slider">
-      <a name="radix" val="10unsigned"/>
+      <a name="radix" val="10signed"/>
       <a name="label" val="n1"/>
       <a name="labelloc" val="east"/>
-      <a name="value" val="0x3"/>
+      <a name="value" val="0xfffffff8"/>
     </comp>
     <comp lib="6" loc="(120,310)" name="Button">
       <a name="label" val="Sincro"/>
@@ -135,7 +135,7 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="radix" val="10unsigned"/>
       <a name="label" val="New PC value"/>
       <a name="labelloc" val="east"/>
-      <a name="value" val="0x80"/>
+      <a name="value" val="0xff"/>
     </comp>
     <comp lib="6" loc="(180,250)" name="Slider">
       <a name="width" val="2"/>
@@ -193,7 +193,7 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     </comp>
     <comp lib="0" loc="(1040,180)" name="Probe">
       <a name="facing" val="west"/>
-      <a name="radix" val="10unsigned"/>
+      <a name="radix" val="10signed"/>
     </comp>
     <comp lib="0" loc="(460,160)" name="Pin">
       <a name="tristate" val="false"/>
@@ -210,9 +210,10 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     </comp>
     <comp lib="6" loc="(970,90)" name="Slider">
       <a name="facing" val="west"/>
-      <a name="radix" val="10unsigned"/>
+      <a name="radix" val="10signed"/>
       <a name="label" val="n2"/>
       <a name="labelloc" val="west"/>
+      <a name="value" val="0x10"/>
     </comp>
     <comp lib="0" loc="(330,340)" name="Probe">
       <a name="facing" val="west"/>
@@ -804,7 +805,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(610,1040)" to="(630,1040)"/>
     <wire from="(680,310)" to="(700,310)"/>
     <wire from="(680,790)" to="(700,790)"/>
-    <wire from="(120,360)" to="(120,400)"/>
     <wire from="(570,350)" to="(600,350)"/>
     <wire from="(920,500)" to="(1140,500)"/>
     <wire from="(500,850)" to="(520,850)"/>
@@ -816,7 +816,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(570,810)" to="(770,810)"/>
     <wire from="(920,440)" to="(920,500)"/>
     <wire from="(630,400)" to="(630,650)"/>
-    <wire from="(80,420)" to="(80,1370)"/>
     <wire from="(550,650)" to="(630,650)"/>
     <wire from="(690,630)" to="(770,630)"/>
     <wire from="(810,170)" to="(810,220)"/>
@@ -887,7 +886,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(550,1010)" to="(610,1010)"/>
     <wire from="(290,440)" to="(290,450)"/>
     <wire from="(930,120)" to="(930,150)"/>
-    <wire from="(80,340)" to="(80,420)"/>
     <wire from="(650,490)" to="(690,490)"/>
     <wire from="(670,430)" to="(710,430)"/>
     <wire from="(580,220)" to="(810,220)"/>
@@ -970,7 +968,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(710,920)" to="(1050,920)"/>
     <wire from="(570,850)" to="(570,960)"/>
     <wire from="(360,400)" to="(380,400)"/>
-    <wire from="(120,400)" to="(140,400)"/>
     <wire from="(580,220)" to="(580,340)"/>
     <wire from="(1110,470)" to="(1270,470)"/>
     <wire from="(570,370)" to="(640,370)"/>
@@ -1024,7 +1021,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(410,990)" to="(470,990)"/>
     <wire from="(490,750)" to="(550,750)"/>
     <wire from="(930,240)" to="(930,250)"/>
-    <wire from="(80,420)" to="(140,420)"/>
     <wire from="(980,470)" to="(980,860)"/>
     <wire from="(960,260)" to="(1020,260)"/>
     <wire from="(890,440)" to="(890,1470)"/>
@@ -1033,7 +1029,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(490,840)" to="(490,850)"/>
     <wire from="(270,1100)" to="(270,1110)"/>
     <wire from="(530,810)" to="(570,810)"/>
-    <wire from="(120,400)" to="(120,1120)"/>
     <wire from="(710,750)" to="(750,750)"/>
     <wire from="(470,660)" to="(470,680)"/>
     <wire from="(610,1040)" to="(610,1070)"/>
@@ -1057,7 +1052,11 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(200,480)" to="(200,490)"/>
     <wire from="(200,480)" to="(840,480)"/>
     <wire from="(190,490)" to="(200,490)"/>
-    <comp lib="1" loc="(180,410)" name="NOR Gate"/>
+    <wire from="(80,340)" to="(80,1370)"/>
+    <wire from="(120,360)" to="(120,1120)"/>
+    <wire from="(150,390)" to="(200,390)"/>
+    <wire from="(150,390)" to="(150,410)"/>
+    <wire from="(150,410)" to="(160,410)"/>
     <comp lib="1" loc="(830,170)" name="NOT Gate"/>
     <comp lib="1" loc="(670,430)" name="OR Gate"/>
     <comp lib="1" loc="(680,790)" name="NOT Gate"/>
@@ -1072,7 +1071,7 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="width" val="8"/>
     </comp>
     <comp lib="7" loc="(206,1386)" name="Text">
-      <a name="text" val="beq 0x7"/>
+      <a name="text" val="b #0x7"/>
       <a name="font" val="Dialog plain 12"/>
     </comp>
     <comp lib="3" loc="(830,580)" name="Multiplexer">
@@ -1092,10 +1091,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     </comp>
     <comp lib="0" loc="(600,930)" name="Constant">
       <a name="width" val="8"/>
-    </comp>
-    <comp lib="7" loc="(550,485)" name="Text">
-      <a name="text" val="mov r0,#0"/>
-      <a name="font" val="Dialog plain 12"/>
     </comp>
     <comp lib="3" loc="(970,190)" name="Multiplexer">
       <a name="facing" val="south"/>
@@ -1154,6 +1149,10 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="facing" val="south"/>
       <a name="width" val="8"/>
       <a name="value" val="0x3"/>
+    </comp>
+    <comp lib="7" loc="(550,502)" name="Text">
+      <a name="text" val="mov r0,#0"/>
+      <a name="font" val="Dialog plain 12"/>
     </comp>
     <comp lib="0" loc="(620,1500)" name="Pin">
       <a name="facing" val="north"/>
@@ -1252,7 +1251,7 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="incoming" val="2"/>
     </comp>
     <comp lib="7" loc="(111,274)" name="Text">
-      <a name="text" val="beq 0x7"/>
+      <a name="text" val="beq #0x7"/>
       <a name="font" val="Dialog plain 12"/>
     </comp>
     <comp lib="3" loc="(710,750)" name="BitSelector">
@@ -1272,6 +1271,7 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="width" val="2"/>
       <a name="value" val="0x3"/>
     </comp>
+    <comp lib="1" loc="(180,410)" name="NOT Gate"/>
     <comp lib="7" loc="(338,821)" name="Text">
       <a name="text" val="add r0, #1"/>
       <a name="font" val="Dialog plain 12"/>
